@@ -8,7 +8,8 @@ The reason why this code exists because i was involved in a GDSC UUM tech worksh
 - have python installed
 - open terminal
 - then run this in your terminal `pip install -r requirements.txt`
-- add your attendance.csv which can be converted from excel file with the following format `MATRIC NO,NAME` e.g 123123, ilham *note: at the moment it only accepts .csv extension
+- add your attendance.csv which can be converted from excel file with the following format `MATRIC NO,NAME` e.g 123123, ilham or simply just matric number only *note: at the moment it only accepts .csv extension
+![csv example](./images/csv_example.PNG)
 - create .env file and add your credentials `USERNAME='your_uum_username' PASSWORD='your_uum_password'`
 - next, you only need to configure the main.py file. choose which project report activity you want to choose. replace the ContentPlaceHolder1_gw1_ImageButton20_4 with your own report_activity_btn_id.
 
