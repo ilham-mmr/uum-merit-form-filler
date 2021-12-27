@@ -5,8 +5,10 @@ The reason why this code exists because i was involved in a GDSC UUM tech worksh
 
 ## How to use
 
-- have python installed
-- open terminal
+- download this script by going to green button that says 'code' and download it as ZIP
+- then extract it
+- make sure you have python installed
+- open terminal like cmd in the extracted ZIP
 - then run this in your terminal `pip install -r requirements.txt`
 - add your attendance.csv which can be converted from excel file with the following format `MATRIC NO,NAME` e.g 123123, ilham or simply just matric number only *note: at the moment it only accepts .csv extension
 ![csv example](./images/csv_example.PNG)
