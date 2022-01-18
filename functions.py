@@ -40,12 +40,20 @@ def choose_club_report_activity(report_activity_btn_id):
     activity.click()
     time.sleep(1)                
 
-def run_flow(username, password,attendance, report_activity_btn_id):
+def run_flow(username, password,attendance, page ,report_activity_btn_id):
     try:
         driver.get('https://portal5.uum.edu.my/SAMS/AktivitiHEP/projek/list_projekstud.aspx')
         time.sleep(1) 
         login(username, password)
+        
+        # choose page 
+        pages = driver.find_elements(By.XPATH,'//*[@id="ContentPlaceHolder1_gw1"]/tbody/tr[12]/td/table/tbody/tr/child::*')
+        time.sleep(0.05)
+        selected_page = pages[page - 1]
+        selected_page.click()
+        
         choose_club_report_activity(report_activity_btn_id)
+        
         # click add button
         add_participant = driver.find_element(By.ID,'ContentPlaceHolder1_btn_ajk0')
         add_participant.click()

@@ -1,4 +1,4 @@
 from functions import run_flow
 
 if __name__ == '__main__':
-    run_flow('your_uum_username','your_uum_password','attendance.csv','ContentPlaceHolder1_gw1_ImageButton20_4')
+    run_flow('my_username','my_password','attendance.csv',2,'ContentPlaceHolder1_gw1_ImageButton20_1')
